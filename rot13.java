@@ -62,7 +62,7 @@ public class rot13{
 
 
 	public static void main(String[] args){
-		rot13 go = new rot13();
+		rot13 cipher = new rot13();
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		System.out.println("This script encrypts and decrpts your text using the rot13 cipher(Shout out the romans)");
@@ -77,12 +77,12 @@ public class rot13{
 				case 1:
 					System.out.print("Enter your text: ");
 					String plainText = sc.nextLine();
-					System.out.println(go.encryptString(plainText) + "\n");
+					System.out.println(cipher.encryptString(plainText) + "\n");
 					break;
 				case 2:
 					System.out.print("Enter your text: ");
 					String enryptedText = sc.nextLine();
-					System.out.println(go.decryptString(enryptedText) + "\n");
+					System.out.println(cipher.decryptString(enryptedText) + "\n");
 					break;
 				case 3:
 					sc.close();
